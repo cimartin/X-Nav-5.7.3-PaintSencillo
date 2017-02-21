@@ -6,6 +6,7 @@
 <html>
   <head>
     <title>Un sencillo Paint con HTML5</title>
+    <h1>Un sencillo Paint con HTML5</h1>
     <link rel="stylesheet" href="paint.css"/>
     <script src="paint.js"></script>
     <meta charset="utf-8"/>
@@ -13,11 +14,11 @@
   <body>
     <div>
       <canvas id="canvas" width="500" height="500">
-        Tu navegador no soporta canvas de HTML 5. 
+        Tu navegador no soporta canvas de HTML 5.
       </canvas>
     </div>
     <div>
-      <h1>Un sencillo Paint con HTML5</h1>
+      
       <p>Pulsa para seleccionar un color abajo y luego desplaza el puntero con el botón del ratón apretado sobre el canvas para dibujar.</p>
       <p>Color elegido: <span id="color_chosen">Black</span></p>
       <p>
@@ -26,7 +27,15 @@
         <input type="button" id="Blue"/>
         <input type="button" id="Black"/>
         <input type="button" id="White"/>
-      </p>  
+      </p>
+      <p> tamaño brocha: <span id="width_chosen">7</span></p>
+      <p>
+        <input type="button" id="1" value = "1px"/>
+        <input type="button" id="3" value = "3px"/>
+        <input type="button" id="4" value = "4px"/>
+        <input type="button" id="6" value = "6px"/>
+        <input type="button" id="7" value = "7px"/>
+      </p>
       <p>
         <input type="button" id="reset_image" value="Borrar"/>
       </p>
